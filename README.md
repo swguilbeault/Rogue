@@ -19,19 +19,6 @@ The inventory can be opened in multiple ways. When opened, up/down or d/c may be
 ### Compilation
 To compile the program, ensure Gradle is installed and run `gradle build` from the primary directory.
 ### Usage
-To run the program, ensure the program has been compiled and run the command `java -jar ./build/libs/a3.jar` or `gradle run` from the primary directory.
-### Assumptions
-* The project outline is not specific about linking doors that are not properly paired. Below is the algorithm used in this implementation of Rogue.
-    * First, doors that are properly paired (opposite walls) are linked
-    * Second, doors that are improperly paired are connected
-        * e.g. if room 1 and 2 contain doors on the East wall that are still incomplete and lead to rooms 2 and 1, they will be paired together despite being on the same wall
-    * Third, any remaining doors will be connected to randomly generated doors in the appropriate room
-        * No prioritization is given to the side of the room the random door is on
-        * If random door cannot be added, the JSON file is considered invalid and the program will communicate that it has failed to load the file
-    * Any doorless rooms will have a random door added and connected to a random door in the dungeon.
-        * The new destination room must have at least 1 door (avoid loops)
-        * The direction of the door in the previously doorless room is based upon where the corresponding door was added.
-            * e.g. if Room 1 was doorless and it adds a new door to connect on the west wall of Room 2, the door in Room 1 will be placed on the east wall.
+To run the program, ensure the program has been compiled and run the command `java -jar ./build/libs/a3.jar` or `gradle run` from the primary directory.ast wall.
 ---------------------------------
-###### Project written independently by Samuel Guilbeault (1088129) guilbeas@uoguelph.ca
 ###### Projected completed November 30, 2020
