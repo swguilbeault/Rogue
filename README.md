@@ -19,6 +19,7 @@ The inventory can be opened in multiple ways. When opened, up/down or d/c may be
 ### Compilation
 To compile the program, ensure Gradle is installed and run `gradle build` from the primary directory.
 ### Usage
-To run the program, ensure the program has been compiled and run the command `java -jar ./build/libs/a3.jar` or `gradle run` from the primary directory.ast wall.
+To run the program, ensure the program has been compiled and run the command `java -jar ./build/libs/a3.jar` or `gradle run` from the primary directory.
+
 ---------------------------------
 ###### Projected completed November 30, 2020
